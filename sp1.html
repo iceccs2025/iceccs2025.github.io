@@ -118,7 +118,7 @@
                     
 
                     <!--- Begin Travel Information -->
-                    <div id="cfp-1" class="tab-pane fade in active">
+                    <div id="cfp-1" class="tab-pane fade ">
                         <div class="">
                             <div class="well">
                                 <ul class="nav nav-stacked nav-pills" >
@@ -270,7 +270,10 @@
     <script type="text/javascript">
     $(function() {
         var hash = window.location.hash;
-        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+                console.log($(hash))
+        hash && $(hash).addClass('in active');
+
+//        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
     });
     </script>
     </body>
