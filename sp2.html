@@ -151,9 +151,9 @@
                         <h5>Submission</h5>
                         <p>To speed up the review process, and to encourage people to join the Internetware 2020 conference (in Singapore), we setup two rounds of reviews: the Internetware conference round, and the SoSyM journal round. </p>
 
-                        <p>In the Internetware conference round, authors are encouraged to submit their manuscripts to the Easychair submission site (https://easychair.org/conferences/?conf=internetware2020). You should choose “Open Environmental Software Systems Modelling Track” in Easychair. The submissions must have not been previously published or considered for publication elsewhere. Each submission must not exceed 10 pages for all text, figures, tables, and references. All submissions must be in English and in PDF format. Please use the 2019 ACM Master article template, as can be obtained from the ACM Proceedings Template pages. Each submission will receive at least three high-quality reviews from our PCs. Each accepted submission must be accompanied by a registration of at least one author and presented at Internetware 2020.    </p>
+                        <p>In the Internetware conference round, authors are encouraged to submit their manuscripts to the Easychair submission <a href="https://easychair.org/conferences/?conf=internetware2020">site</a> . You should choose “Open Environmental Software Systems Modelling Track” in Easychair. The submissions must have not been previously published or considered for publication elsewhere. Each submission must not exceed 10 pages for all text, figures, tables, and references. All submissions must be in English and in PDF format. Please use the 2019 ACM Master article template, as can be obtained from the ACM Proceedings Template pages. Each submission will receive at least three high-quality reviews from our PCs. Each accepted submission must be accompanied by a registration of at least one author and presented at Internetware 2020.    </p>
 
-                        <p>As for the SoSyM journal round, only selected best papers from this special track will be invited to submit their extensions to the SoSyM special issue. Please do consult the SoSyM website (http://www.sosym.org/submission/) and get familiar with the SoSyM submission guidelines, especially the SoSyM Publication Quality Guidelines. The authors are expected to carefully address comments from the Internetware conference reviewers and prepare a response letter clearly stating the extension. Please note that an invitation to an extended submission does not guarantee its acceptance to the SoSyM special issue. </p>
+                        <p>As for the SoSyM journal round, only selected best papers from this special track will be invited to submit their extensions to the SoSyM special issue. Please do consult the SoSyM <a href="http://www.sosym.org/submission/" >website</a>  and get familiar with the SoSyM submission guidelines, especially the SoSyM Publication Quality Guidelines. The authors are expected to carefully address comments from the Internetware conference reviewers and prepare a response letter clearly stating the extension. Please note that an invitation to an extended submission does not guarantee its acceptance to the SoSyM special issue. </p>
 
                         <p>The SoSyM special issue submission site will be announced soon. </p>
 
@@ -194,7 +194,9 @@
 	<script type="text/javascript">
 	$(function() {
 	    var hash = window.location.hash;
-	    hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+        console.log($(hash))
+        hash && $(hash).addclass('in active');
+	    //hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 	});
 	</script>
 	</body>
