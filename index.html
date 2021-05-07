@@ -33,6 +33,9 @@
    vertical-align : middle;  
 }
 
+.second-row {display: table-row; height: 100%; width: 100%; background-color: red; overflow: hidden }
+.second-row iframe {width: 100%; height: 100%; border: none; margin: 0; padding: 0; display: block;}
+
         </style>
     </head>
     <body>
@@ -484,23 +487,97 @@
                     </div>
                     <!--- End Important Dates -->
                     <!--- Begin Program -->
-                    <div id="program" class="tab-pane fade">
+                    <div id="program" class="tab-pane fade ">
                         <h3>Internetware 2020 Program </h3>
 <h4>Download the program <a href="/Internetware_2020_Program_v1.pdf">here</a><h4>
                         <p><br></p>
+
+                        <script>
+                          function resizeIframe(obj) {
+                            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+                          }
+                        </script>
+
+            <iframe src="./Sheet1.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" 
+            style="width:120%; height:800px;"
+
+             ></iframe>
+
+
+
                         
                     </div>
                     <!--- End Program -->
-                    
-                    <!--- Begin Keynote -->
                     <div id="keynote" class="tab-pane fade">
                     <h2>Keynote Speakers</h2>
                         <br>
                         
-                        under contruction
+                        <!---Begin Akira Fukuda -->
+                        <div class="row">
+                        <h3 style="  text-align: center;">       Toward Sustainable Information Infrastructure Platform for Smart Mobility</h3>
 
+                            <div class="col-md-3">
+                                <img class="img-responsive" src="resources/p1.png"> 
+                            </div>
+                            
+                            <div class="col-md-9">
+                                <h3><a href="https://www.lbriand.info"  target="_blank">Prof. LIONEL C. BRIAND</a> </h3>
+                                <h4>Canada Research Chair (Tier1), IEEE Fellow, ACM Fellow, and ERC Advanced Grantee</h4>
+                                
+                            </div>
+                            
+                        </div>
+                        <!--- End Akira Fukuda -->
+                    
+                        <!---Begin Akira Fukuda -->
+                        <div class="row">
+                        <h3  style="  text-align: center;"> Toward Sustainable Information Infrastructure Platform for Smart Mobility</h3>
+                            <div>
+                                <div class="col-md-3">
+                                <img class="img-responsive" src="resources/p2.png" style="max-height: 240px;"> 
+                                </div>
+                            
+                                <div class="col-md-9">
+                                <h3><a href="https://personal.ntu.edu.sg/yi_li/" target="_blank">Prof. Yi Li</a></h3>
+                                <h4>Assistant professor in the School of Computer Science and Engineering at the Nanyang Technological University.</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--- End Akira Fukuda -->
+
+
+                        <!---Begin Akira Fukuda -->
+                        <div class="row">
+                        <h3  style="  text-align: center;"> Toward Sustainable Information Infrastructure Platform for Smart Mobility</h3>
+                                <div>
+                                    <div class="col-md-3">
+                                    <img class="img-responsive" src="resources/p3.png"> 
+                                    </div>
+                                
+                                    <div class="col-md-9">
+                                    <h3><a href="http://ics.nju.edu.cn/people/xiaoxingma/" target="_blank">Prof. Xiaoxing Ma</a></h3><h4> State Key Laboratory for Novel Software Technology, and Department of Computer Science and Technology, Nanjing University</h4>
+                                    
+                                    
+                                    </div>
+                                    
+                                    <h4></h4>
+                                    <p> <br/><br/><br/>
+                                    </p>
+
+
+                                    <div class="col-md-12"><br></div>
+                                </div>
+
+                        </div>
+                        <!--- End Akira Fukuda -->
+
+
+                        <!--- End Sun Jun -->
                     </div>
                     <!--- End Keynote -->
+                    
                     
                     <!--- Begin Registration -->
                     <div id="registration" class="tab-pane fade">
